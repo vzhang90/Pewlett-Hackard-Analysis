@@ -16,6 +16,7 @@ In order to address concerns around Pewlett Hackard's coming and eventual "silve
 > 6) [titles.csv](https://github.com/vzhang90/Pewlett-Hackard-Analysis/blob/main/data/titles.csv)
 
 <sub>using [Quick DBD](https://www.quickdatabasediagrams.com/) can help model the data through ERDs*(Entity Relationship Diagrams)* conceptually, logically, and physically</sub>
+  
 ---
 
 ### The Number of Retiring Employees by Title
