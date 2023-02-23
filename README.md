@@ -5,7 +5,7 @@ This report's analysis will:  ***1) determine the number of retiring employees p
 
 ## Overview of Analysis
 
-In order to address concerns around Pewlett Hackard's coming and eventual "silver tsunami," six CSV files will be analyzed using SQL to build an employee database.
+In order to address concerns around Pewlett Hackard's coming and eventual "silver tsunami," six CSV files will be analyzed using **SQL** to build an employee database.
 
 > **Resources:** 
 > 1) [departments.csv](https://github.com/vzhang90/Pewlett-Hackard-Analysis/blob/main/data/departments.csv)
@@ -21,7 +21,7 @@ In order to address concerns around Pewlett Hackard's coming and eventual "silve
 
 ### The Number of Retiring Employees by Title
 **Retirement Titles Table**
-- A ***SQL query*** in pgAdmin is written and executed to create a **Retirement Titles table** for employees who are born between January 1, 1952 and December 31, 1955:
+- A ***SQL query*** in **pgAdmin** is written and executed to create a **Retirement Titles table** for employees who are born between January 1, 1952 and December 31, 1955:
     - retrieves the `emp_no`, `first_name`, and `last_name` columns from the **Employees table**
     - retrieves the `title`, `from_date`, and `to_date` columns from the **Titles table**
     - creates a new table using the `INTO` clause
