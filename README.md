@@ -1,7 +1,7 @@
 # Pewlett Hackard Analysis
 Pewlett Hackard is a large company boasting several thousand employees, but baby boomers are beginning to retire at an unprecedented rapid rate *(leaving thousounds of job openings)*. As the company tries to look towards the future, it wants to anticipate retirement packages for those who meet a certain criteria while considering which positions will need to be filled in the near future.
 
-***This report's analysis will:  1) determine the number of retiring employees per title  &  2) identify employees who are eligible to participate in a mentorship program***
+This report's analysis will:  ***1) determine the number of retiring employees per title***  &  ***2) identify employees who are eligible to participate in a mentorship program***
 
 ## Overview of Analysis
 
