@@ -39,8 +39,6 @@ In order to address concerns around Pewlett Hackard's coming and eventual "silve
         - *ascending* order by the ***employee number*** of most recent title
         - *descending* order by the ***last date*** (i.e., `to_date`) of most recent title
 
----
-
 **Retiring Titles Table**
 - A query is written and executed to create a **Retiring Titles table** that contains the ***number of titles filled by employees who are retiring:***
     - retrieves ***titles*** and uses `COUNT()` to retrieve the ***number of titles*** from the **Unique Titles table**
