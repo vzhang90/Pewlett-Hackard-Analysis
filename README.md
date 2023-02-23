@@ -26,7 +26,7 @@ In order to address concerns around Pewlett Hackard's coming and eventual "silve
     - retrieves the `title`, `from_date`, and `to_date` columns from the **Titles table**
     - creates a new table using the `INTO` clause
     - joins both tables on the primary key
-    - filters data on birth_date column to retrieve employees who were born between 1952 and 1955 
+    - filters data on `birth_date` column to retrieve employees who were born between 1952 and 1955 
         - orders by the employee number
 
 
