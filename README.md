@@ -15,13 +15,20 @@ In order to address concerns around Pewlett Hackard's coming and eventual "silve
 > 5) [salaries.csv](https://github.com/vzhang90/Pewlett-Hackard-Analysis/blob/main/data/salaries.csv)
 > 6) [titles.csv](https://github.com/vzhang90/Pewlett-Hackard-Analysis/blob/main/data/titles.csv)
 
-<sub>using [Quick DBD](https://www.quickdatabasediagrams.com/) can help model the data through ERDs*(Entity Relationship Diagrams)* conceptually, logically, and physically</sub>
+<sub>using [Quick DBD](https://www.quickdatabasediagrams.com/) can help model the data through ERDs conceptually, logically, and physically</sub>
   
 ---
 
 ### The Number of Retiring Employees by Title
 **Retirement Titles Table**
-- A query is written and executed to create a Retirement Titles table for employees who are born between January 1, 1952 and December 31, 1955:
+- A ***SQL query*** in pgAdmin is written and executed to create a **Retirement Titles table** for employees who are born between January 1, 1952 and December 31, 1955:
+    - retrieves the `emp_no`, `first_name`, and `last_name` columns from the **Employees table**
+    - retrieves the `title`, `from_date`, and `to_date` columns from the **Titles table**
+    - creates a new table using the `INTO` clause
+    - joins both tables on the primary key
+    - filters data on birth_date column to retrieve employees who were born between 1952 and 1955 
+        - orders by the employee number
+
 
 ---
 
