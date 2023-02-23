@@ -21,14 +21,31 @@ In order to address concerns around Pewlett Hackard's coming and eventual "silve
 
 ### The Number of Retiring Employees by Title
 **Retirement Titles Table**
-- A ***SQL query*** in **pgAdmin** is written and executed to create a **Retirement Titles table** for employees who are born between January 1, 1952 and December 31, 1955:
+- An SQL query in **pgAdmin** is written and executed to create a **Retirement Titles table** for ***employees*** who are ***born between January 1, 1952 and December 31, 1955:***
     - retrieves the `emp_no`, `first_name`, and `last_name` columns from the **Employees table**
     - retrieves the `title`, `from_date`, and `to_date` columns from the **Titles table**
     - creates a new table using the `INTO` clause
     - joins both tables on the primary key
-    - filters data on `birth_date` column to retrieve employees who were born between 1952 and 1955 
-        - orders by the employee number
+    - filters data on `birth_date` column to retrieve employees who were born between 1952 & 1955 
+        - orders by employee number
 
+**Unique Titles Table**
+- A query is written and executed to create a **Unique Titles table** that contains the ***employee number***, ***first***and ***last name***, and ***most recent title***:
+    - retrieves the ***employee number***, ***first*** and ***last name***, and ***title*** columns from the **Retirement Titles table**
+    - uses the `DISTINCT ON` statement to retrieve first occurrence of employee number for each set of rows defined by the `ON ()` clause
+    - excludes those employees that have already left the company by filtering on `to_date` to keep only those dates that are equal to `'9999-01-01'`
+    - creates **Unique Titles table** using the `INTO` clause
+    - sorts **Unique Titles table** by
+        - *ascending* order by the ***employee number*** of most recent title
+        - *descending* order by the ***last date*** (i.e., `to_date`) of most recent title
+
+---
+
+**Retiring Titles Table**
+- A query is written and executed to create a **Retiring Titles table** that contains the ***number of titles filled by employees who are retiring:***
+    - retrieves ***titles*** and uses `COUNT()` to retrieve the ***number of titles*** from the **Unique Titles table**
+    - creates **Retiring Titles table** to hold required information
+    - groups table by ***title***, then sort the count column in *descending* order
 
 ---
 
