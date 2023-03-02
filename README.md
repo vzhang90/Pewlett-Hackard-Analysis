@@ -9,7 +9,7 @@ This report's analysis will:
 
 In order to address concerns around Pewlett Hackard's coming and eventual "silver tsunami," six CSV files will be analyzed using **SQL** query tool in **pgAdmin** to build an employee database.
 
-> **Resources:** 
+> **Pewlett Hackard's employee datasets:** 
 > 1) [departments.csv](https://github.com/vzhang90/Pewlett-Hackard-Analysis/blob/main/data/departments.csv)
 > 2) [dept_empt.csv](https://github.com/vzhang90/Pewlett-Hackard-Analysis/blob/main/data/dept_emp.csv)
 > 3) [dept_manager.csv](https://github.com/vzhang90/Pewlett-Hackard-Analysis/blob/main/data/dept_manager.csv)
@@ -23,7 +23,8 @@ In order to address concerns around Pewlett Hackard's coming and eventual "silve
 
 ### The Number of Retiring Employees by Title
 **Retirement Titles Table**
-This SQL query will:
+
+The SQL query written and executed will:
 1. retrieve `emp_no`, `first_name`, and `last_name` columns from employees table
 2. retrieve `title`, `from_date`, and `to_date` columns from titles table
 3. create new table called retirement_titles using `INTO` clause
@@ -35,23 +36,26 @@ This SQL query will:
 9. order results by count in descending order
 10. export retirement_titles table as a CSV file [retirement_titles.csv]()
   
-**Unique Titles Table**
-- A query is written and executed to create a **Unique Titles table** that contains the ***employee number***, ***first***and ***last name***, and ***most recent title***:
-    - retrieves the ***employee number***, ***first*** and ***last name***, and ***title*** columns from the **Retirement Titles table**
-    - uses the `DISTINCT ON` statement to retrieve first occurrence of employee number for each set of rows defined by the `ON ()` clause
-    - excludes those employees that have already left the company by filtering on `to_date` to keep only those dates that are equal to `'9999-01-01'`
-    - creates **Unique Titles table** using the `INTO` clause
-    - sorts **Unique Titles table** by
-        - *ascending* order by the ***employee number*** of most recent title
-        - *descending* order by the ***last date*** (i.e., `to_date`) of most recent title
-- The Unique Titles table is exported as `unique_titles.csv`
+**Unique Titles Table** 
+The SQL query written and executed will:
+1. retrieve ***employee number***, ***first*** and ***last name***, and ***title*** columns from the **Retirement Titles table**
+2. use the `DISTINCT ON` statement to retrieve the first occurrence of employee number for each set of rows defined by the `ON ()` clause
+3. excludes those employees that have already left the company by filtering on `to_date` to keep only those dates that are equal to `'9999-01-01'`
+4. creates **Unique Titles table** using `INTO` clause
+5. sorts **Unique Titles table** by
+        - *ascending* order by ***employee number*** of most recent title
+        - *descending* order by ***last date*** (e.g., `to_date`) of most recent title
+6. The Unique Titles table is exported as [unique_titles.csv]()
 
 **Retiring Titles Table**
+
+The SQL query written and executed will:
+
 - A query is written and executed to create a **Retiring Titles table** that contains the ***number of titles filled by employees who are retiring:***
-    - retrieves ***titles*** and uses `COUNT()` to retrieve the ***number of titles*** from the **Unique Titles table**
-    - creates **Retiring Titles table** to hold required information
-    - groups table by ***title***, then sort the count column in *descending* order
-- The Ritiring Titles table is exported as `retiring_titles.csv`
+1. retrieve ***titles*** and uses `COUNT()` to retrieve the ***number of titles*** from the **Unique Titles table**
+2. create **Retiring Titles table** to hold required information
+3. group table by ***title***, then sort the count column in *descending* order
+4. export The Ritiring Titles table as [retiring_titles.csv]()
 
 ---
 
