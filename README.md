@@ -46,15 +46,15 @@ In the [Employee_Database_challenge.sql file](), SQL queries are written and exe
     3. excludes those employees that have already left the company by filtering on `to_date` to keep only those dates that are equal to `'9999-01-01'`    
     4. creates **Unique Titles table** using `INTO` clause   
     5. sorts **Unique Titles table** by   
-            - *ascending* order by ***employee number*** of most recent title
-            - *descending* order by ***last date*** (e.g., `to_date`) of most recent title
+            - *ascending* order by ***employee number*** of most recent title    
+            - *descending* order by ***last date*** (e.g., `to_date`) of most recent title    
     6. The Unique Titles table is exported as [unique_titles.csv]()  
 
-**Retiring Titles Table**  
-    1. retrieve ***titles*** and uses `COUNT()` to retrieve the ***number of titles*** from the **Unique Titles table**
-    2. create **Retiring Titles table** to hold required information of ***number of titles filled by employees who are retiring
-    3. group table by ***title***, then sort the count column in *descending* order
-    4. export The Ritiring Titles table as [retiring_titles.csv]()
+**Retiring Titles Table**     
+    1. retrieve ***titles*** and uses `COUNT()` to retrieve the ***number of titles*** from the **Unique Titles table**     
+    2. create **Retiring Titles table** to hold required information of ***number of titles filled by employees who are retiring     
+    3. group table by ***title***, then sort the count column in *descending* order     
+    4. export The Ritiring Titles table as [retiring_titles.csv]()     
 
 ---
 
