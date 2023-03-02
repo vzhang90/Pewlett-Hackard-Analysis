@@ -36,7 +36,7 @@ The SQL query written and executed will:
 9. order results by count in descending order
 10. export retirement_titles table as a CSV file [retirement_titles.csv]()
   
-**Unique Titles Table** 
+**Unique Titles Table**   
 The SQL query written and executed will:
 1. retrieve ***employee number***, ***first*** and ***last name***, and ***title*** columns from the **Retirement Titles table**
 2. use the `DISTINCT ON` statement to retrieve the first occurrence of employee number for each set of rows defined by the `ON ()` clause
