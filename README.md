@@ -20,10 +20,10 @@ In order to address concerns around Pewlett Hackard's coming and eventual "silve
 *Planning out the relations between different datasets with [Quick DBD](https://www.quickdatabasediagrams.com/) can help model the data through ERDs conceptually, logically, and physically*
 
 In the [Employee_Database_challenge.sql file](), SQL queries are written and executed to create four tables to build an employee database exported as CSV files:
-1. [retirement_titles.csv]()
-2. [unique_titles.csv]()
-3. [retiring_titles.csv]()
-4. [mentorship_elibigility.csv]()
+> 1. [retirement_titles.csv]()
+> 2. [unique_titles.csv]()
+> 3. [retiring_titles.csv]()
+> 4. [mentorship_elibigility.csv]()
 
 ---
 
