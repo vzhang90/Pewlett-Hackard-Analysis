@@ -46,7 +46,8 @@ In order to address concerns around Pewlett Hackard's coming and eventual "silve
             - *descending* order by ***last date*** (e.g., `to_date`) of most recent title
     6. The Unique Titles table is exported as [unique_titles.csv]()
 
-**Retiring Titles Table**   
+**Retiring Titles Table**  
+ 
     - The SQL query written and executed will:
         1. retrieve ***titles*** and uses `COUNT()` to retrieve the ***number of titles*** from the **Unique Titles table**
         2. create **Retiring Titles table** to hold required information of ***number of titles filled by employees who are retiring
