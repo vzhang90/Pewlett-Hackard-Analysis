@@ -20,7 +20,7 @@ In order to address concerns around Pewlett Hackard's coming and eventual "silve
 *Planning out the relations between different datasets with [Quick DBD](https://www.quickdatabasediagrams.com/) can help model the data through ERDs conceptually, logically, and physically*
 
 In the [Employee_Database_challenge.sql file](), SQL queries are written and executed to create four tables to build an employee database exported as CSV files:
-> 1. [retirement_titles.csv]()
+> 1. [retirement_titles.csv](https://github.com/vzhang90/Pewlett-Hackard-Analysis/blob/main/data/retirement_titles.csv)
 > 2. [unique_titles.csv]()
 > 3. [retiring_titles.csv]()
 > 4. [mentorship_elibigility.csv]()
@@ -38,7 +38,7 @@ In the [Employee_Database_challenge.sql file](), SQL queries are written and exe
             7. insert results into retirement_titles table   
             8. count number of retirement-age employees by most recent job title   
             9. order results by count in descending order   
-            10. export retirement_titles table as a CSV file [retirement_titles.csv]()
+            10. export retirement_titles table as a CSV file [retirement_titles.csv](https://github.com/vzhang90/Pewlett-Hackard-Analysis/blob/main/data/retirement_titles.csv)
   
 **Unique Titles Table**      
             1. retrieve ***employee number***, ***first*** and ***last name***, and ***title*** columns from the **Retirement Titles table**    
