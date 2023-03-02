@@ -47,12 +47,11 @@ In order to address concerns around Pewlett Hackard's coming and eventual "silve
     6. The Unique Titles table is exported as [unique_titles.csv]()
 
 **Retiring Titles Table**  
- 
-    - The SQL query written and executed will:
-        1. retrieve ***titles*** and uses `COUNT()` to retrieve the ***number of titles*** from the **Unique Titles table**
-        2. create **Retiring Titles table** to hold required information of ***number of titles filled by employees who are retiring
-        3. group table by ***title***, then sort the count column in *descending* order
-        4. export The Ritiring Titles table as [retiring_titles.csv]()
+- The SQL query written and executed will:
+    1. retrieve ***titles*** and uses `COUNT()` to retrieve the ***number of titles*** from the **Unique Titles table**
+    2. create **Retiring Titles table** to hold required information of ***number of titles filled by employees who are retiring
+    3. group table by ***title***, then sort the count column in *descending* order
+    4. export The Ritiring Titles table as [retiring_titles.csv]()
 
 ---
 
