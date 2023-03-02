@@ -60,17 +60,17 @@ In the [Employee_Database_challenge.sql file](), SQL queries are written and exe
 
 ### The Employees Elegibile for the Mentorship Program
 
-**Mentorship Eligibility Table**
-    1. retrieve the `emp_no`, `first_name`, `last_name`, and `birth_date` columns from the Employees table
-    2. retrieve the `from_date` and `to_date` columns from the Department Employee table
-    3. retrieve the `title` column from the Titles table
-    4. use a `DISTINCT ON` statement to retrieve the first occurrence of the employee number for each set of rows defined by the `ON ()` clause
-    5. create a new table using the `INTO` clause.
-    6. join the Employees and the Department Employee tables on the primary key
-    7. join the Employees and the Titles tables on the primary key
-    8. filter the data on the `to_date column` to all the current employees, then filter the data on the `birth_date` columns to get all the employees whose birth dates are between January 1, 1965 and December 31, 1965
-    9. order the table by the employee number
-    10. export the Mentorship Eligibility table as [mentorship_eligibilty.csv]()
+**Mentorship Eligibility Table**    
+    1. retrieve the `emp_no`, `first_name`, `last_name`, and `birth_date` columns from the Employees table     
+    2. retrieve the `from_date` and `to_date` columns from the Department Employee table      
+    3. retrieve the `title` column from the Titles table      
+    4. use a `DISTINCT ON` statement to retrieve the first occurrence of the employee number for each set of rows defined by the `ON ()` clause     
+    5. create a new table using the `INTO` clause      
+    6. join the Employees and the Department Employee tables on the primary key     
+    7. join the Employees and the Titles tables on the primary key     
+    8. filter the data on the `to_date column` to all the current employees, then filter the data on the `birth_date` columns to get all the employees whose birth dates are between January 1, 1965 and December 31, 1965    
+    9. order the table by the employee number    
+    10. export the Mentorship Eligibility table as [mentorship_eligibilty.csv]()    
 
 ## Results
 
