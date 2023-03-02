@@ -9,7 +9,7 @@ This report's analysis will:
 
 In order to address concerns around Pewlett Hackard's coming and eventual "silver tsunami," six CSV files will be analyzed using **SQL** query tool in **pgAdmin** to build an employee database.
 
-> <sub>**Pewlett Hackard's employee datasets:**</sub>
+> <sub>**Pewlett Hackard's employee datasets:**</sub>   
 > <sub>1. [departments.csv](https://github.com/vzhang90/Pewlett-Hackard-Analysis/blob/main/data/departments.csv)</sub>  
 > <sub>2. [dept_empt.csv](https://github.com/vzhang90/Pewlett-Hackard-Analysis/blob/main/data/dept_emp.csv)</sub>  
 > <sub>3. [dept_manager.csv](https://github.com/vzhang90/Pewlett-Hackard-Analysis/blob/main/data/dept_manager.csv)</sub>  
