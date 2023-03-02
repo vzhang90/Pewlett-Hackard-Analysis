@@ -2,22 +2,22 @@
 Pewlett Hackard is a large company boasting several thousand employees, but baby boomers are beginning to retire at an unprecedented rapid rate *(leaving thousounds of job openings)*. As the company tries to look towards the future, it wants to anticipate retirement packages for those who meet a certain criteria while considering which positions will need to be filled in the near future.
 
 This report's analysis will:  
-***1. determine the number of retiring employees per title*** 
+***1. determine the number of retiring employees per title***   
 ***2. identify employees who are eligible to participate in a mentorship program***
 
 ## Overview of Analysis
 
 In order to address concerns around Pewlett Hackard's coming and eventual "silver tsunami," six CSV files will be analyzed using **SQL** query tool in **pgAdmin** to build an employee database.
 
-> **Pewlett Hackard's employee datasets:** 
-> 1) [departments.csv](https://github.com/vzhang90/Pewlett-Hackard-Analysis/blob/main/data/departments.csv)
-> 2) [dept_empt.csv](https://github.com/vzhang90/Pewlett-Hackard-Analysis/blob/main/data/dept_emp.csv)
-> 3) [dept_manager.csv](https://github.com/vzhang90/Pewlett-Hackard-Analysis/blob/main/data/dept_manager.csv)
-> 4) [employees.csv](https://github.com/vzhang90/Pewlett-Hackard-Analysis/blob/main/data/employees.csv)
-> 5) [salaries.csv](https://github.com/vzhang90/Pewlett-Hackard-Analysis/blob/main/data/salaries.csv)
-> 6) [titles.csv](https://github.com/vzhang90/Pewlett-Hackard-Analysis/blob/main/data/titles.csv)
+> <sub>**Pewlett Hackard's employee datasets:**</sub>
+> <sub>1) [departments.csv](https://github.com/vzhang90/Pewlett-Hackard-Analysis/blob/main/data/departments.csv)</sub>
+> <sub>2) [dept_empt.csv](https://github.com/vzhang90/Pewlett-Hackard-Analysis/blob/main/data/dept_emp.csv)</sub>
+> <sub>3) [dept_manager.csv](https://github.com/vzhang90/Pewlett-Hackard-Analysis/blob/main/data/dept_manager.csv)</sub>
+> <sub>4) [employees.csv](https://github.com/vzhang90/Pewlett-Hackard-Analysis/blob/main/data/employees.csv)</sub>
+> <sub>5) [salaries.csv](https://github.com/vzhang90/Pewlett-Hackard-Analysis/blob/main/data/salaries.csv)</sub>
+> <sub>6) [titles.csv](https://github.com/vzhang90/Pewlett-Hackard-Analysis/blob/main/data/titles.csv)</sub>
 
-<sub>Planning out the relations between different datasets with [Quick DBD](https://www.quickdatabasediagrams.com/) can help model the data through ERDs conceptually, logically, and physically</sub>
+*Planning out the relations between different datasets with [Quick DBD](https://www.quickdatabasediagrams.com/) can help model the data through ERDs conceptually, logically, and physically*
   
 ---
 
