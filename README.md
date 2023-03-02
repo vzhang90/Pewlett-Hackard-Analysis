@@ -50,10 +50,8 @@ The SQL query written and executed will:
 **Retiring Titles Table**
 
 The SQL query written and executed will:
-
-- A query is written and executed to create a **Retiring Titles table** that contains the ***number of titles filled by employees who are retiring:***
 1. retrieve ***titles*** and uses `COUNT()` to retrieve the ***number of titles*** from the **Unique Titles table**
-2. create **Retiring Titles table** to hold required information
+2. create **Retiring Titles table** to hold required information of ***number of titles filled by employees who are retiring
 3. group table by ***title***, then sort the count column in *descending* order
 4. export The Ritiring Titles table as [retiring_titles.csv]()
 
