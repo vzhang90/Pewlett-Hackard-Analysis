@@ -24,7 +24,7 @@ In order to address concerns around Pewlett Hackard's coming and eventual "silve
 ### The Number of Retiring Employees by Title
 **Retirement Titles Table**
 
-The SQL query written and executed will:
+- The SQL query written and executed will:
 1. retrieve `emp_no`, `first_name`, and `last_name` columns from employees table
 2. retrieve `title`, `from_date`, and `to_date` columns from titles table
 3. create new table called retirement_titles using `INTO` clause
@@ -37,7 +37,7 @@ The SQL query written and executed will:
 10. export retirement_titles table as a CSV file [retirement_titles.csv]()
   
 **Unique Titles Table**   
-The SQL query written and executed will:
+- The SQL query written and executed will:
 1. retrieve ***employee number***, ***first*** and ***last name***, and ***title*** columns from the **Retirement Titles table**
 2. use the `DISTINCT ON` statement to retrieve the first occurrence of employee number for each set of rows defined by the `ON ()` clause
 3. excludes those employees that have already left the company by filtering on `to_date` to keep only those dates that are equal to `'9999-01-01'`
@@ -49,7 +49,7 @@ The SQL query written and executed will:
 
 **Retiring Titles Table**
 
-The SQL query written and executed will:
+- The SQL query written and executed will:
 1. retrieve ***titles*** and uses `COUNT()` to retrieve the ***number of titles*** from the **Unique Titles table**
 2. create **Retiring Titles table** to hold required information of ***number of titles filled by employees who are retiring
 3. group table by ***title***, then sort the count column in *descending* order
