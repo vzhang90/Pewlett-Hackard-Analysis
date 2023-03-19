@@ -7,7 +7,7 @@ This report's analysis will:
 
 ## Overview of Analysis
 
-In order to address concerns around Pewlett Hackard's coming and eventual "silver tsunami," six CSV files will be analyzed using **SQL** query tool in **pgAdmin**.
+In order to address concerns around Pewlett Hackard's coming and eventual "silver tsunami," six CSV files will be analyzed:
 
 > <sub>**Pewlett Hackard's employee datasets:**</sub>   
 > <sub>1. [departments.csv](https://github.com/vzhang90/Pewlett-Hackard-Analysis/blob/main/data/departments.csv)</sub>  
@@ -19,11 +19,13 @@ In order to address concerns around Pewlett Hackard's coming and eventual "silve
 
 *Planning out the relations between different datasets with [Quick DBD](https://www.quickdatabasediagrams.com/) can help model the data through ERDs conceptually, logically, and physically*
 
-In the [Employee_Database_challenge.sql file](), SQL queries are written and executed to create four tables to build an employee database exported as CSV files:
+In the [Employee_Database_challenge.sql file](https://github.com/vzhang90/Pewlett-Hackard-Analysis/blob/main/Queries/Employee_Database_challenge.sql), 
+
+SQL queries are written and executed in **pgAdmin**, creating four tables to build an employee database exported as CSV files:
 > 1. [retirement_titles.csv](https://github.com/vzhang90/Pewlett-Hackard-Analysis/blob/main/data/retirement_titles.csv)
-> 2. [unique_titles.csv]()
-> 3. [retiring_titles.csv]()
-> 4. [mentorship_elibigility.csv]()
+> 2. [unique_titles.csv](https://github.com/vzhang90/Pewlett-Hackard-Analysis/blob/main/data/unique_titles.csv)
+> 3. [retiring_titles.csv](https://github.com/vzhang90/Pewlett-Hackard-Analysis/blob/main/data/retiring_titles.csv)
+> 4. [mentorship_elibigility.csv](https://github.com/vzhang90/Pewlett-Hackard-Analysis/blob/main/data/mentorship_eligibility.csv)
 
 ---
 
@@ -48,13 +50,13 @@ In the [Employee_Database_challenge.sql file](), SQL queries are written and exe
             5. sorts **Unique Titles table** by   
                         - *ascending* order by ***employee number*** of most recent title    
                         - *descending* order by ***last date*** (e.g., `to_date`) of most recent title    
-            6. The Unique Titles table is exported as [unique_titles.csv]()  
+            6. The Unique Titles table is exported as [unique_titles.csv](https://github.com/vzhang90/Pewlett-Hackard-Analysis/blob/main/data/unique_titles.csv)  
 
 **Retiring Titles Table**     
             1. retrieve ***titles*** and uses `COUNT()` to retrieve the ***number of titles*** from the **Unique Titles table**     
             2. create **Retiring Titles table** to hold required information of ***number of titles filled by employees who are retiring     
             3. group table by ***title***, then sort the count column in *descending* order     
-            4. export The Ritiring Titles table as [retiring_titles.csv]()     
+            4. export The Ritiring Titles table as [retiring_titles.csv](https://github.com/vzhang90/Pewlett-Hackard-Analysis/blob/main/data/retiring_titles.csv)     
 
 ---
 
@@ -70,12 +72,27 @@ In the [Employee_Database_challenge.sql file](), SQL queries are written and exe
             7. join the Employees and the Titles tables on the primary key     
             8. filter the data on the `to_date column` to all the current employees, then filter the data on the `birth_date` columns to get all the employees whose birth dates are between January 1, 1965 and December 31, 1965    
             9. order the table by the employee number    
-            10. export the Mentorship Eligibility table as [mentorship_eligibilty.csv]()    
+            10. export the Mentorship Eligibility table as [mentorship_eligibilty.csv](https://github.com/vzhang90/Pewlett-Hackard-Analysis/blob/main/data/mentorship_eligibility.csv)    
+
+---
+---
 
 ## Results
+From the four tables generated from the Pewlett Hackard's employee database, it can be inferred:  
+- there are 133,776 job title positions within Pewlett Hackard eligible to retire *as shown by the retirement_titles table below:*
+![retirement_titles](https://github.com/vzhang90/Pewlett-Hackard-Analysis/blob/main/images/retirement_titles.png)  
+- there are 72,458 employees within the company eligible to currently retire *as shown by the unique_titles table below:*
+![unique_titles](https://github.com/vzhang90/Pewlett-Hackard-Analysis/blob/main/images/unique_titles.png)
+- the majority of employees retiring are Senior Engineers and Senior Staff *as shown by the retiring_titles table below:*
+![retiring_titles](https://github.com/vzhang90/Pewlett-Hackard-Analysis/blob/main/images/retiring_titles.png)  
+- 1,549 employees are currently eligible for mentorship opportunities to take over retiring employees *as shown by the total row count in the mentorship_eligibilitiy table below:*  
+![mentorship_eligibility](https://github.com/vzhang90/Pewlett-Hackard-Analysis/blob/main/images/mentorship_eligibility.png)  
 
 ## Summary
-- How many roles will need to be filled as the "silver tsunami" begins to make an impact?
-- Are there enough qualified, retirement-ready employees in the departments to mentor the next generation of Pewlett Hackard employees?
+72,458 roles will need to be filled at Pewlett Hackard as the "silver tsunami" begins to make an impact.
 
-provide two additional queries or tables that may provide more insight into the upcoming "silver tsunami." 
+With only 1,549 employees eligible for mentorship opportunities to take over retiring employees, there is definitely enough qualified, retirement-ready employees (72,458) in the departments to mentor the next generation of Pewlett Hackard employees.
+
+For future investigations that may provide more insight into the upcoming "silver tsunami", it could be even more insightful to another query to generate a Salaries table to forecast the payroll funds after this labor shift. 
+
+It would also be helpful to create a query to reflect the upcoming departures of the many employees retiring in the management team. The result of this query would show only 5 departments have active managers while the retiring_titles table shows 2 retiring managers, meaning potentially 7 upcoming manager positions needed at Pewlett Hackard.
