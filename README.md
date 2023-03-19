@@ -79,11 +79,11 @@ SQL queries are written and executed in **pgAdmin**, creating four tables to bui
 
 ## Results
 From the four tables generated from the Pewlett Hackard's employee database, it can be inferred:  
-- there are 133,776 job title positions within Pewlett Hackard eligible to retire *as shown by the retirement_titles table below:*
+- there are 133,776 job title positions within Pewlett Hackard eligible to retire *as shown by the retirement_titles table below:*  
 ![retirement_titles](https://github.com/vzhang90/Pewlett-Hackard-Analysis/blob/main/images/retirement_titles.png)  
-- there are 72,458 employees within the company eligible to currently retire *as shown by the unique_titles table below:*
+- there are 72,458 employees within the company eligible to currently retire *as shown by the unique_titles table below:*  
 ![unique_titles](https://github.com/vzhang90/Pewlett-Hackard-Analysis/blob/main/images/unique_titles.png)
-- the majority of employees retiring are Senior Engineers and Senior Staff *as shown by the retiring_titles table below:*
+- the majority of employees retiring are Senior Engineers and Senior Staff *as shown by the retiring_titles table below:*  
 ![retiring_titles](https://github.com/vzhang90/Pewlett-Hackard-Analysis/blob/main/images/retiring_titles.png)  
 - 1,549 employees are currently eligible for mentorship opportunities to take over retiring employees *as shown by the total row count in the mentorship_eligibilitiy table below:*  
 ![mentorship_eligibility](https://github.com/vzhang90/Pewlett-Hackard-Analysis/blob/main/images/mentorship_eligibility.png)  
